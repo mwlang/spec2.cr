@@ -34,7 +34,7 @@ module Spec2
   end
 
   def record_started_at
-    @@started_at = Time.now
+    @@started_at = Time.local
   end
 
   def started_at

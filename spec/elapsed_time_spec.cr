@@ -3,7 +3,7 @@ require "../src/elapsed_time"
 
 module Spec2
   Spec2.describe ElapsedTime do
-    let(started_at) { Time.new(2014, 4, 21, 13, 27, 33, 57) }
+    let(started_at) { Time.local(2014, 4, 21, 13, 27, 33, nanosecond: 57) }
 
     describe "#to_s" do
       context "when seconds < 1" do
@@ -24,22 +24,22 @@ module Spec2
         it "returns in milliseconds rounded to .2" do
           expect(ElapsedTime.new(
             started_at,
-            started_at + Time::Span.new(36 * 10000)
+            started_at + Time::Span.new(nanoseconds: 36 * 10000 * 100)
           ).to_s).to eq("36.0 milliseconds")
 
           expect(ElapsedTime.new(
             started_at,
-            started_at + Time::Span.new(36.5 * 10000)
+            started_at + Time::Span.new(nanoseconds: (36.5 * 10000 * 100).to_i)
           ).to_s).to eq("36.5 milliseconds")
 
           expect(ElapsedTime.new(
             started_at,
-            started_at + Time::Span.new(36.57 * 10000)
+            started_at + Time::Span.new(nanoseconds: (36.57 * 10000 * 100).to_i)
           ).to_s).to eq("36.57 milliseconds")
 
           expect(ElapsedTime.new(
             started_at,
-            started_at + Time::Span.new(36.573 * 10000)
+            started_at + Time::Span.new(nanoseconds: (36.573 * 10000 * 100).to_i)
           ).to_s).to eq("36.57 milliseconds")
         end
       end

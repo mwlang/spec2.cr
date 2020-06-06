@@ -1,6 +1,8 @@
 ---
 name: spec2
-version: 0.11.0
+version: 0.12.0
 license: MIT
 authors:
 - Oleksii Fedorov <waterlink000@gmail.com>
+maintainers:
+- Daniel Uber <djuber@gmail.com>

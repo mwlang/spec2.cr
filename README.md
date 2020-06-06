@@ -27,8 +27,8 @@ Add it to `shard.yml`
 ```yml
 dependencies:
   spec2:
-    github: waterlink/spec2.cr
-    version: ~> 0.9
+    github: djuber/spec2.cr
+    version: ~> 0.12.0
 ```
 
 ## Goals
