@@ -1,6 +1,6 @@
 # spec2 [![Build Status](https://travis-ci.org/waterlink/spec2.cr.svg)](https://travis-ci.org/waterlink/spec2.cr)
 
-Enhanced `spec` testing library for [Crystal](http://crystal-lang.org/).
+Enhanced `spec` testing library for [Crystal](http://crystal-lang.org/). Forked from https://github.com/waterlink/spec2.cr
 
 ## Example
 
