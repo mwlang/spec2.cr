@@ -27,7 +27,7 @@ Add it to `shard.yml`
 ```yml
 dependencies:
   spec2:
-    github: djuber/spec2.cr
+    github: mwlang/spec2.cr
     version: ~> 0.12.0
 ```
 
